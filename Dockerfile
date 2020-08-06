@@ -6,6 +6,7 @@ RUN apt install -y python wget
 RUN apt install -y python-pip
 RUN pip2 install Dtls flask
 RUN apt install -y openssl1.0
+RuN mkdir /opt/nubevaTools
 RUN wget -O /opt/nubevaTools/dtlskeydb.py https://nubevalabs.s3.amazonaws.com/dtlskeydb/dtlskeydb.py
 RUN wget -O /opt/nubevaTools/nubedge.ca https://nubevalabs.s3.amazonaws.com/dtlskeydb/nubedge.ca
 RUN wget -O /opt/nubevaTools/nubedge.pem https://nubevalabs.s3.amazonaws.com/dtlskeydb/nubedge.pem
