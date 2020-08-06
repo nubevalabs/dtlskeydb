@@ -11,4 +11,5 @@ RUN wget -O /opt/nubevaTools/dtlskeydb.py https://nubevalabs.s3.amazonaws.com/dt
 RUN wget -O /opt/nubevaTools/nubedge.ca https://nubevalabs.s3.amazonaws.com/dtlskeydb/nubedge.ca
 RUN wget -O /opt/nubevaTools/nubedge.pem https://nubevalabs.s3.amazonaws.com/dtlskeydb/nubedge.pem
 RUN wget -O /opt/nubevaTools/nubedge.key https://nubevalabs.s3.amazonaws.com/dtlskeydb/nubedge.key
+WORKDIR /opt/nubevaTools
 CMD python /opt/nubevaTools/dtlskeydb.py
